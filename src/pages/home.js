@@ -1,25 +1,19 @@
-import React, { useState} from 'react'
+import React from 'react'
+import Counter from '../components/counter'
 
 
 
 function Home() {
 
-    const [count, setCount] = useState(0)
-
-    function decrementCount() {
-        setCount(prevCount => prevCount -1)
-    }
     
-    function incrementCount() {
-        setCount(prevCount => prevCount +1)
-    }
     
     return (
         <div>
-            <h1>home page</h1>
-            <button onClick={decrementCount}>-</button>
-            <span>{count}</span>
-            <button onClick={incrementCount}>+</button>
+            
+            <Counter>
+            
+           <h1>home page</h1>
+            </Counter>
         </div>
     )
 }
